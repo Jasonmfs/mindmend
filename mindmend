@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMend Ring - Smart Mental Health Monitoring</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .nav {
+            background: #fff;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            background: #f8f9fa;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .ring-animation {
+            width: 200px;
+            height: 200px;
+            margin: 2rem auto;
+            border: 20px solid #1a2a6c;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .button {
+            background: #1a2a6c;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>MindMend Ring</h1>
+        <p>Innovative Mental Health Monitoring</p>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#value">Value Proposition</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#business">Business Model</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="ring-animation"></div>
+        <h2>Transform Your Mental Wellness Journey</h2>
+        <p>Advanced AI-powered ring for sleep tracking and mental health monitoring</p>
+        <a href="#contact" class="button">Pre-order Now</a>
+    </section>
+
+    <section id="product" class="section">
+        <h2>Product Overview</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Sleep Tracking</h3>
+                <p>Advanced sleep stage analysis and quality monitoring</p>
+            </div>
+            <div class="card">
+                <h3>Heart Rate Monitoring</h3>
+                <p>Continuous daytime heart rate and HRV tracking</p>
+            </div>
+            <div class="card">
+                <h3>Stress Detection</h3>
+                <p>Early warning system for stress level changes</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="value" class="section">
+        <h2>Value Proposition</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Early Detection</h3>
+                <p>AI-driven analysis for early mental health concern identification</p>
+            </div>
+            <div class="card">
+                <h3>Non-invasive Design</h3>
+                <p>Fashionable and comfortable for 24/7 wear</p>
+            </div>
+            <div class="card">
+                <h3>Data Privacy</h3>
+                <p>Compliant with Hong Kong PDPO standards</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="business" class="section">
+        <h2>Business Model</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Customer Segments</h3>
+                <ul>
+                    <li>Young professionals</li>
+                    <li>Corporate wellness programs</li>
+                    <li>Healthcare providers</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Revenue Streams</h3>
+                <ul>
+                    <li>Hardware sales (HKD 1,800-2,500)</li>
+                    <li>Premium subscriptions</li>
+                    <li>Corporate packages</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Distribution Channels</h3>
+                <ul>
+                    <li>Premium electronics retailers</li>
+                    <li>Online platforms</li>
+                    <li>Direct sales</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <div class="card">
+            <p>Interested in MindMend Ring? Get in touch with our team.</p>
+            <p>Email: info@mindmendring.hk</p>
+            <p>Phone: +852 XXXX XXXX</p>
+            <p>Address: Hong Kong Science Park, New Territories, Hong Kong</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 MindMend Ring. All rights reserved.</p>
+        <p>Privacy Policy | Terms of Service</p>
+    </footer>
+</body>
+</html>
